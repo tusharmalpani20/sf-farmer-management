@@ -1,0 +1,352 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:FM-{######}",
+ "creation": "2025-06-24 12:40:39.220129",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "parent_details_tab",
+  "basic_details_section",
+  "farmer_name",
+  "name_as_per_aadhaar_card",
+  "gender",
+  "dob",
+  "column_break_veal",
+  "marital_status",
+  "educational_qualification",
+  "covered_under_govt_scheme",
+  "caste",
+  "contact_details_section",
+  "contact_number",
+  "column_break_ylgl",
+  "email",
+  "id_proofs_section",
+  "aadhaar",
+  "aadhaar_front",
+  "aadhaar_back",
+  "column_break_tmsv",
+  "pan",
+  "pan_image",
+  "family_details_tab",
+  "parent_details_section",
+  "father_name",
+  "column_break_tyll",
+  "mother_name",
+  "partner_details_section",
+  "partner_name",
+  "column_break_jjab",
+  "partner_gender",
+  "partner_dob",
+  "partner_contact_number",
+  "children_details_section",
+  "table_mbty",
+  "financial_details_tab",
+  "financial_details_section",
+  "income_source",
+  "column_break_slkw",
+  "annual_income",
+  "bank_details_section",
+  "bank_name",
+  "bank_branch",
+  "bank_ifsc",
+  "column_break_deij",
+  "bank_ac_no",
+  "bank_account_name",
+  "farm_details_tab",
+  "farm_details_section",
+  "total_land_in_acres",
+  "cattle_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "parent_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Farmer Details"
+  },
+  {
+   "fieldname": "basic_details_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Details"
+  },
+  {
+   "fieldname": "farmer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Farmer Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "name_as_per_aadhaar_card",
+   "fieldtype": "Data",
+   "label": "Name As Per Aadhaar Card",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Gender",
+   "options": "Gender",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date Of Birth",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_veal",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "marital_status",
+   "fieldtype": "Select",
+   "label": "Marital Status",
+   "options": "\nSingle\nMarried\nDivorced\nWidowed"
+  },
+  {
+   "fieldname": "educational_qualification",
+   "fieldtype": "Select",
+   "label": "Educational Qualification",
+   "options": "\nNo Formal Education\nLiterate (No Formal Schooling)\nPrimary School (Class 1\u20135)\nMiddle School (Class 6\u20138)\nHigh School (Class 9\u201310)\nHigher Secondary (Class 11\u201312)\nDiploma\nGraduate\nPostgraduate\nDoctorate / PhD\nOther"
+  },
+  {
+   "fieldname": "covered_under_govt_scheme",
+   "fieldtype": "Select",
+   "label": "Is Health Insurance Covered by Government Scheme?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "caste",
+   "fieldtype": "Select",
+   "label": "Caste",
+   "options": "\nGeneral\nOBC\nSC\nST"
+  },
+  {
+   "fieldname": "contact_details_section",
+   "fieldtype": "Section Break",
+   "label": "Contact Details"
+  },
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Data",
+   "label": "Contact Number"
+  },
+  {
+   "fieldname": "column_break_ylgl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "id_proofs_section",
+   "fieldtype": "Section Break",
+   "label": "ID Proofs"
+  },
+  {
+   "fieldname": "aadhaar",
+   "fieldtype": "Data",
+   "label": "Aadhaar Card Number"
+  },
+  {
+   "fieldname": "aadhaar_front",
+   "fieldtype": "Attach Image",
+   "label": "Aadhaar Front"
+  },
+  {
+   "fieldname": "aadhaar_back",
+   "fieldtype": "Attach Image",
+   "label": "Aadhaar Back"
+  },
+  {
+   "fieldname": "column_break_tmsv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pan",
+   "fieldtype": "Data",
+   "label": "PAN"
+  },
+  {
+   "fieldname": "pan_image",
+   "fieldtype": "Attach Image",
+   "label": "PAN Image"
+  },
+  {
+   "fieldname": "family_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Family Details"
+  },
+  {
+   "fieldname": "parent_details_section",
+   "fieldtype": "Section Break",
+   "label": "Parent Details"
+  },
+  {
+   "fieldname": "father_name",
+   "fieldtype": "Data",
+   "label": "Father Name"
+  },
+  {
+   "fieldname": "column_break_tyll",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mother_name",
+   "fieldtype": "Data",
+   "label": "Mother Name"
+  },
+  {
+   "depends_on": "eval:doc.marital_status == \"Married\"",
+   "fieldname": "partner_details_section",
+   "fieldtype": "Section Break",
+   "label": "Partner Details"
+  },
+  {
+   "fieldname": "partner_name",
+   "fieldtype": "Data",
+   "label": "Partner Name"
+  },
+  {
+   "fieldname": "column_break_jjab",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "partner_gender",
+   "fieldtype": "Link",
+   "label": "Partner Gender",
+   "options": "Gender"
+  },
+  {
+   "fieldname": "partner_dob",
+   "fieldtype": "Date",
+   "label": "Partner Date of Birth"
+  },
+  {
+   "fieldname": "partner_contact_number",
+   "fieldtype": "Data",
+   "label": "Partner Contact Number"
+  },
+  {
+   "fieldname": "children_details_section",
+   "fieldtype": "Section Break",
+   "label": "Children Details"
+  },
+  {
+   "fieldname": "table_mbty",
+   "fieldtype": "Table",
+   "options": "Farmer Children Detail"
+  },
+  {
+   "fieldname": "financial_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Financial Details"
+  },
+  {
+   "fieldname": "financial_details_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "income_source",
+   "fieldtype": "Select",
+   "label": "Income Source"
+  },
+  {
+   "fieldname": "column_break_slkw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "annual_income",
+   "fieldtype": "Select",
+   "label": "Annual Income"
+  },
+  {
+   "fieldname": "bank_details_section",
+   "fieldtype": "Section Break",
+   "label": "Bank Details"
+  },
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Data",
+   "label": "Bank Name"
+  },
+  {
+   "fieldname": "bank_branch",
+   "fieldtype": "Data",
+   "label": "Bank Branch"
+  },
+  {
+   "fieldname": "bank_ifsc",
+   "fieldtype": "Data",
+   "label": "Bank IFSC"
+  },
+  {
+   "fieldname": "column_break_deij",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bank_ac_no",
+   "fieldtype": "Data",
+   "label": "Bank A/C No."
+  },
+  {
+   "fieldname": "bank_account_name",
+   "fieldtype": "Data",
+   "label": "Bank Account Name"
+  },
+  {
+   "fieldname": "farm_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Farm Details"
+  },
+  {
+   "fieldname": "farm_details_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_land_in_acres",
+   "fieldtype": "Float",
+   "label": "Total Land In Acres"
+  },
+  {
+   "fieldname": "cattle_details",
+   "fieldtype": "Table",
+   "label": "Cattle Details",
+   "options": "Farmer Cattle Detail"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-24 14:31:05.069156",
+ "modified_by": "Administrator",
+ "module": "Farmer Management",
+ "name": "Farmer Profile",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

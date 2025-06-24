@@ -1,0 +1,110 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:FCAD-{parent}-{###}",
+ "creation": "2025-06-24 11:47:11.016179",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "cattle_details_section",
+  "cattle_name",
+  "cattle_breed",
+  "cattle_type",
+  "cattle_age_details_section",
+  "age",
+  "birth_year",
+  "cattle_offspring_details_section",
+  "male_offspring_count",
+  "female_offspring_count",
+  "total_offspring_count"
+ ],
+ "fields": [
+  {
+   "fieldname": "cattle_details_section",
+   "fieldtype": "Section Break",
+   "label": "Cattle Details"
+  },
+  {
+   "fieldname": "cattle_name",
+   "fieldtype": "Data",
+   "label": "Cattle Name"
+  },
+  {
+   "columns": 1,
+   "fieldname": "cattle_breed",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Cattle Breed",
+   "options": "Cattle Breed Type",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "cattle_breed.cattle_type",
+   "fieldname": "cattle_type",
+   "fieldtype": "Link",
+   "label": "Cattle Type",
+   "options": "Cattle Type",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "cattle_age_details_section",
+   "fieldtype": "Section Break",
+   "label": "Cattle Age Details"
+  },
+  {
+   "columns": 1,
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Age"
+  },
+  {
+   "fieldname": "birth_year",
+   "fieldtype": "Int",
+   "label": "Birth Year",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cattle_offspring_details_section",
+   "fieldtype": "Section Break",
+   "label": "Cattle Offspring Details"
+  },
+  {
+   "columns": 1,
+   "fieldname": "male_offspring_count",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Count of Male Offspring"
+  },
+  {
+   "columns": 1,
+   "fieldname": "female_offspring_count",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Count of Female Offspring"
+  },
+  {
+   "fieldname": "total_offspring_count",
+   "fieldtype": "Int",
+   "label": "Total Offspring Count",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-06-24 14:30:08.253049",
+ "modified_by": "Administrator",
+ "module": "Farmer Management",
+ "name": "Farmer Cattle Detail",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
