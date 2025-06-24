@@ -1,0 +1,81 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:FCD-{parent}-{##}",
+ "creation": "2025-06-24 12:08:31.892425",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "basic_details_section",
+  "children_name",
+  "gender",
+  "dob",
+  "education_details_section",
+  "qualification",
+  "additional_qualification_detail"
+ ],
+ "fields": [
+  {
+   "fieldname": "basic_details_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Details"
+  },
+  {
+   "columns": 1,
+   "fieldname": "children_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Children Name",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Gender",
+   "options": "Gender"
+  },
+  {
+   "columns": 1,
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date Of Birth"
+  },
+  {
+   "fieldname": "education_details_section",
+   "fieldtype": "Section Break",
+   "label": "Education Details"
+  },
+  {
+   "columns": 1,
+   "fieldname": "qualification",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Qualification",
+   "options": "\nNo Formal Education\nLiterate (No Formal Schooling)\nPrimary School (Class 1\u20135)\nMiddle School (Class 6\u20138)\nHigh School (Class 9\u201310)\nHigher Secondary (Class 11\u201312)\nDiploma\nGraduate\nPostgraduate\nDoctorate / PhD\nOther"
+  },
+  {
+   "fieldname": "additional_qualification_detail",
+   "fieldtype": "Data",
+   "label": "Additional Qualification Detail"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-06-24 14:29:57.691376",
+ "modified_by": "Administrator",
+ "module": "Farmer Management",
+ "name": "Farmer Children Detail",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
