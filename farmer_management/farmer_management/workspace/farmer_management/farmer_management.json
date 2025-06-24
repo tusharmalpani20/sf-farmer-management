@@ -1,0 +1,54 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"kGVJpdgmZy\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Farmer Management</span>\",\"col\":12}},{\"id\":\"Lg9zcOEYSm\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Cattle Details</b></span>\",\"col\":12}},{\"id\":\"4NwK0lJzSw\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Cattle Type\",\"col\":3}},{\"id\":\"P-NbpKzt4T\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Cattle Breed\",\"col\":3}},{\"id\":\"6LjliKaNmW\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Farmer Details</b></span>\",\"col\":12}},{\"id\":\"J9ifxaXEaM\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Farmer Profile\",\"col\":3}}]",
+ "creation": "2025-06-24 14:58:34.535168",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "share-people",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Farmer Management",
+ "links": [],
+ "modified": "2025-06-24 15:02:51.253457",
+ "modified_by": "Administrator",
+ "module": "Farmer Management",
+ "name": "Farmer Management",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 34.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Cattle Type",
+   "link_to": "Cattle Type",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Cattle Breed",
+   "link_to": "Cattle Breed Type",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Farmer Profile",
+   "link_to": "Farmer Profile",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Farmer Management"
+}
