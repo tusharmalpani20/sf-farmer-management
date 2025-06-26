@@ -9,8 +9,8 @@
  "field_order": [
   "cattle_details_section",
   "cattle_name",
-  "cattle_breed",
   "cattle_type",
+  "cattle_breed",
   "cattle_age_details_section",
   "age",
   "birth_year",
@@ -37,15 +37,17 @@
    "in_list_view": 1,
    "label": "Cattle Breed",
    "options": "Cattle Breed Type",
+   "read_only_depends_on": "eval:!doc.cattle_type",
    "reqd": 1
   },
   {
+   "columns": 1,
    "fetch_from": "cattle_breed.cattle_type",
    "fieldname": "cattle_type",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Cattle Type",
    "options": "Cattle Type",
-   "read_only": 1,
    "reqd": 1
   },
   {
@@ -96,7 +98,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-06-24 14:30:08.253049",
+ "modified": "2025-06-26 11:07:14.345848",
  "modified_by": "Administrator",
  "module": "Farmer Management",
  "name": "Farmer Cattle Detail",
