@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "format:{cattle_name}",
  "creation": "2025-06-24 11:48:31.004679",
@@ -20,7 +21,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-06-24 14:28:48.646706",
+ "modified": "2025-06-26 11:10:04.520337",
  "modified_by": "Administrator",
  "module": "Farmer Management",
  "name": "Cattle Type",

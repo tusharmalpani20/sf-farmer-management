@@ -255,7 +255,8 @@
   {
    "fieldname": "income_source",
    "fieldtype": "Select",
-   "label": "Income Source"
+   "label": "Income Source",
+   "options": "\nSalary\nAgriculture\nHouse Property\nProfits and Gains from Business\nCapital Gains\nOther Sources"
   },
   {
    "fieldname": "column_break_slkw",
@@ -264,7 +265,8 @@
   {
    "fieldname": "annual_income",
    "fieldtype": "Select",
-   "label": "Annual Income"
+   "label": "Annual Income",
+   "options": "\n<1 Lakh\n1 - 3Lakh\n>3Lakh"
   },
   {
    "fieldname": "bank_details_section",
@@ -324,7 +326,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-06-24 14:31:05.069156",
+ "modified": "2025-06-26 12:06:28.686684",
  "modified_by": "Administrator",
  "module": "Farmer Management",
  "name": "Farmer Profile",
